@@ -7,11 +7,11 @@ namespace ConsoleApp1
         public static void Main(string[] args)
         {
             var studentInfo =
-                File.ReadAllText(@"C:\Users\AmirAli\Desktop\internship\c#intro\Solution1\ConsoleApp1\students.json");
+                File.ReadAllText(@"../../../../students.json");
             var students = JsonSerializer.Deserialize<List<Student>>(studentInfo);
             
             var scoresInfo =
-                File.ReadAllText(@"C:\Users\AmirAli\Desktop\internship\c#intro\Solution1\ConsoleApp1\scores.json");
+                File.ReadAllText(@"../../../../scores.json");
             var scores = JsonSerializer.Deserialize<List<Course>>(scoresInfo);
 
 
