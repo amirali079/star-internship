@@ -9,13 +9,7 @@ class Program
         var queryManager = new QueryManager(){InvertedIndex=indexer.
             GetInvertedIndex(fileReader.ReadFile(@"../../../../EnglishData"))};
 
-        // foreach (var e in queryManager.InvertedIndex.Keys)
-        // {
-        //     Console.WriteLine(e);
-        // }
-        //
-
-        var result = queryManager.Search(Console.ReadLine().ToUpper());
+        var result = queryManager.Search(Console.ReadLine()?.ToUpper());
 
         Console.WriteLine(result.Count);
         foreach (var element in result)

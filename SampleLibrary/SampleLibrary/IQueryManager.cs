@@ -2,5 +2,5 @@
 
 public interface IQueryManager
 {
-    HashSet<string> Search(string query);
+    HashSet<string> Search(string? query);
 }

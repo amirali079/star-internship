@@ -4,7 +4,7 @@ public class QueryManager : IQueryManager
 {
     public Dictionary<string, HashSet<string>> InvertedIndex;
 
-    public HashSet<string> Search(string query)
+    public HashSet<string> Search(string? query)
     {
         var commands = query.Split(" ");
 
@@ -42,10 +42,20 @@ public class QueryManager : IQueryManager
             }
         }
 
-        result = and[0];
-        foreach (var set in and)
-            result.IntersectWith(set);
-        result.IntersectWith(or);
+        if (!and.Count.Equals(0))
+        {
+            result = and[0];
+            foreach (var set in and)
+                result.IntersectWith(set);
+        }
+        else
+            result = or;
+
+        Console.WriteLine(or.Count);
+        if (!or.Count.Equals(0))
+            result.IntersectWith(or);
+        
+        
 
         foreach (var wordNot in not)
             result.RemoveWhere(word=>word.Equals(wordNot));
