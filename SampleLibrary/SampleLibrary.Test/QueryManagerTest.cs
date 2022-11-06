@@ -2,7 +2,7 @@
 
 public class QueryManagerTest
 {
-    private Dictionary<string, HashSet<string>> _invertedIndex = new Dictionary<string, HashSet<string>>
+    private readonly Dictionary<string, HashSet<string>> _invertedIndex = new Dictionary<string, HashSet<string>>
     {
         { "A", new HashSet<string> { "f1", "f2", "f3" } },
         { "B", new HashSet<string> { "f1", "f2", "f3" } },
