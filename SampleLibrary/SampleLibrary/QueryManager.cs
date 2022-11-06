@@ -18,23 +18,27 @@ public class QueryManager : IQueryManager
         {
             if (word[0].Equals('+'))
             {
-                var keys = InvertedIndex[word[1..]];
-                foreach (var element in keys)
-                {
-                    or.Add(element);
-                }
+                InvertedIndex.TryGetValue(word[1..], out var keys);
+
+                if (keys != null)
+                    foreach (var element in keys)
+                    {
+                        or.Add(element);
+                    }
             }
             else if (word[0].Equals('-'))
             {
-                var keys = InvertedIndex[word[1..]];
-                foreach (var element in keys)
-                {
-                    not.Add(element);
-                }
+                InvertedIndex.TryGetValue(word[1..], out var keys);
+                if (keys != null)
+                    foreach (var element in keys)
+                    {
+                        not.Add(element);
+                    }
             }
             else
             {
-                and.Add(new HashSet<string>(InvertedIndex[word]));
+                InvertedIndex.TryGetValue(word, out var keys);
+                if (keys != null) and.Add(keys);
             }
         }
 

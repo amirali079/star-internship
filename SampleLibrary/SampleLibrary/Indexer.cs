@@ -12,7 +12,7 @@ public class Indexer : IIndexer
         foreach (var doc in docs.Keys)
         {
             
-            var words = Regex.Replace(docs[doc], @"[^A-Z]+", " ").Split(" ");
+            var words = Regex.Replace(docs[doc], @"[^a-z A-Z]+", " ").ToUpper().Split(" ");
 
             foreach (var word in words)
             {
