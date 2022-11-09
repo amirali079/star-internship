@@ -22,4 +22,10 @@ jobs:
         working-directory: SampleLibrary
       - name: Test
         run: dotnet test --no-restore --verbosity normal --collect:"XPlat Code Coverage"
-        working-directory: SampleLibrary    
+        working-directory: SampleLibrary
+      - name: Publish code coverage reports to codecove.io
+        uses: codecov/codecov-action@v1
+        with:
+          token: e38c986e-835b-4850-aedb-71226aa218c1
+          files: ./**/coverage.cobertura.xml
+          fail_ci_if_error: true    
