@@ -8,13 +8,10 @@
     <projectFile profileName="https">SearchEngine/SearchEngine.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="23b09835-16a8-4e17-87bd-f1f0bc45933a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../CSharpPhase/CSharpPhase/CSharpPhase.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../CSharpPhase/CSharpPhase/CSharpPhase.csproj" afterDir="false" />
+    <list default="true" id="23b09835-16a8-4e17-87bd-f1f0bc45933a" name="Changes" comment="change files and fix workflow">
+      <change afterPath="$PROJECT_DIR$/SearchEngineWebApp/Startup.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SearchEngine/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SearchEngine/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SampleLibrary.Test/SampleLibrary.Test.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/SampleLibrary.Test/SampleLibrary.Test.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SampleLibrary/SampleLibrary.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/SampleLibrary/SampleLibrary.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SearchApp/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SearchApp/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SearchApp/SearchApp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/SearchApp/SearchApp.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SearchEngineWebApp/SearchEngineWebApp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/SearchEngineWebApp/SearchEngineWebApp.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,7 +19,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RESET_MODE" value="MIXED" />
+    <option name="RESET_MODE" value="SOFT" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/../CSharpPhase/CSharpPhase/Program.cs" root0="FORCE_HIGHLIGHTING" />
@@ -62,7 +59,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected=".NET Project.SearchApp">
+  <component name="RunManager" selected=".NET Project.WebAPI">
     <configuration name="SampleLibrary.Test" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -192,7 +189,7 @@
       <workItem from="1669193012838" duration="681000" />
       <workItem from="1669879050839" duration="14195000" />
       <workItem from="1669897930115" duration="3320000" />
-      <workItem from="1669901311060" duration="329000" />
+      <workItem from="1669901311060" duration="4253000" />
     </task>
     <task id="LOCAL-00001" summary="fix test file">
       <created>1667733250003</created>
@@ -278,7 +275,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669900464545</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="change files and fix workflow">
+      <created>1669901781573</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1669901781573</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -314,6 +318,7 @@
     <MESSAGE value="fix dotnet version in workflow" />
     <MESSAGE value="more fix" />
     <MESSAGE value="clean up all files" />
-    <option name="LAST_COMMIT_MESSAGE" value="clean up all files" />
+    <MESSAGE value="change files and fix workflow" />
+    <option name="LAST_COMMIT_MESSAGE" value="change files and fix workflow" />
   </component>
 </project>
