@@ -18,13 +18,13 @@ public class DocumentService : IDocumentService
     public async Task<IEnumerable<DocumentResponse>> GetDocumentByKeyword(string query)
     {
         var result = new HashSet<DocumentResponse>();
-        
-        if (query!=null)
+
+        if (query != null)
         {
             var docs = _queryManager.Search(query);
             docs.ToList().ForEach(docName => result.Add(new DocumentResponse { Name = docName }));
         }
-        
+
         return result;
     }
 }

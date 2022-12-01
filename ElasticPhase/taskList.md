@@ -1,4 +1,3 @@
-
 - [x] Section 1: Read the introduction to Elasticsearch.
     - [x] Name 3 products of Elastic stack:
         1. Kibana
@@ -24,7 +23,9 @@
     - [x] Run `Match` query.
     - [x] Run `Fuzzy` query.
     - [x] Write down the difference between `Match` and `Fuzzy` queries:
-        - مچ دقیقا تطبیق میدهد که همان کلمه بدون هیچ تغییری در مورد ها وجود داشته باشد اما فازی به این صورت است که میتوان کلمات با اختلاف یک کاراکتر طبق قانون لوناشتاین متغیر باشد و اگر عدد فازینس را بیشتر کنیم اختلاف بیشتر یک کاراکتر را نیز نمایش میدهد.
+        - مچ دقیقا تطبیق میدهد که همان کلمه بدون هیچ تغییری در مورد ها وجود داشته باشد اما فازی به این صورت است که
+          میتوان کلمات با اختلاف یک کاراکتر طبق قانون لوناشتاین متغیر باشد و اگر عدد فازینس را بیشتر کنیم اختلاف بیشتر
+          یک کاراکتر را نیز نمایش میدهد.
           نکته ای در مورد فازی بود اگر برای سرچ تک کاراکتر بگذاریم با افزایش عدد فازینس بازهم توانایی سرج را نداشت
     - [x] Run `Term` query.
     - [x] What's the difference between `Match` and `Term` queries?
@@ -37,7 +38,8 @@
         - [x] Run 1st bool query.
         - [x] Run 2nd bool query.
         - [x] Run 3rd bool query.
-    - [x] Write down a query in which `name` or `last_name` must be 'Mohammadi' with fuzziness of 1 and `name` should be 'Ali' and age should not be more than 30 (**Hint: You can nest bool queries inside each other**)
+    - [x] Write down a query in which `name` or `last_name` must be 'Mohammadi' with fuzziness of 1 and `name` should
+      be 'Ali' and age should not be more than 30 (**Hint: You can nest bool queries inside each other**)
 
 ```
  GET /people-simple/_search
@@ -84,7 +86,8 @@
     - [x] Create custom analyzer.
     - [x] Run analyze API query against the custom analyzer.
     - [x] What can be the usage of this custom analyzer?
-        - اگر بخواهیم زیررشته‌ی عبارات را جستجو کنیم می‌توانیم از این آنالایزر استفاده کنیم مثلاً اگر عبارت «محمد» را جستجو کنیم و بخواهیم سندی که عبارت «محمدی» دارد نیز در نتایج ظاهر شود.
+        - اگر بخواهیم زیررشته‌ی عبارات را جستجو کنیم می‌توانیم از این آنالایزر استفاده کنیم مثلاً اگر عبارت «محمد» را
+          جستجو کنیم و بخواهیم سندی که عبارت «محمدی» دارد نیز در نتایج ظاهر شود.
 - [x] Section 10: Search for substrings
     - [x] Define mapping for `last_name` field using the custom analyzer.
     - [x] Run the search query over that field and pay attention to the result.
@@ -92,7 +95,6 @@
     - [x] Download `people` dataset.
     - [x] Create mapping suitable for each field of the dataset.
     - [x] (Optional but recommended) Try out different search queries over fields of different datatypes.
-
 
 ```
 PUT people-1
@@ -219,7 +221,9 @@ PUT people-1
 
 - [x] Section 12: Bulk API
     - [x] Download `poems` dataset.
-    - [x] Index all the data to Elasticsearch at once using the `Bulk` API. Note that you may need to program some code to create
+    - [x] Index all the data to Elasticsearch at once using the `Bulk` API. Note that you may need to program some code
+      to create
+
 ```
 POST poem-test/_bulk
 {"index":{}}
@@ -228,10 +232,10 @@ POST poem-test/_bulk
 {"m1":"ز جیب خویش بجو مه چو موسی عمران","m2":"نگر به روزن خویش و بگو سلام سلام","poet":"مولوی","url":"https://ganjoor.net/moulavi/shams/ghazalsh/sh1734/"}
 ...
 ```
+
 - [x] Section 13: Aggregations
     - [x] Run the query to get number of poems available from each poet.
     - [x] (Optional) Read about different kinds of aggregation queries and try them out.
-
 
 ```
  {

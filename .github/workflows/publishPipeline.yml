@@ -14,15 +14,15 @@ jobs:
       - name: Setup .NET
         uses: actions/setup-dotnet@v2
         with:
-          dotnet-version: 6.0.x
-          
+          dotnet-version: 7.0.x
+
       - name: Get current release version
         id: version
         uses: pozetroninc/github-action-get-latest-release@master
         with:
-          repository: amirali079/star-internship    
+          repository: amirali079/star-internship
       - name: Build library and generate NuGet Package
         run: dotnet pack -c Release -o artifacts -p:PackageVersion=${{ steps.version.outputs.release }}
-        working-directory: SampleLibrary/SampleLibrary
+        working-directory: SearchEngine/SampleLibrary
       - name: Publish NuGet Package
         run: dotnet nuget push ./**/*.nupkg -k ${{ secrets.NUGET_API_KEY }} -s https://api.nuget.org/v3/index.json  

@@ -20,32 +20,26 @@ public class QueryManager : IQueryManager
         var not = new HashSet<string>();
 
         foreach (var word in commands)
-        {
             if (word[0].Equals('+'))
             {
                 _invertedIndex.TryGetValue(word[1..], out var keys);
 
                 if (keys != null)
                     foreach (var element in keys)
-                    {
                         or.Add(element);
-                    }
             }
             else if (word[0].Equals('-'))
             {
                 _invertedIndex.TryGetValue(word[1..], out var keys);
                 if (keys != null)
                     foreach (var element in keys)
-                    {
                         not.Add(element);
-                    }
             }
             else
             {
                 _invertedIndex.TryGetValue(word, out var keys);
                 if (keys != null) and.Add(keys);
             }
-        }
 
         if (!and.Count.Equals(0))
         {
@@ -54,7 +48,9 @@ public class QueryManager : IQueryManager
                 result.IntersectWith(set);
         }
         else
+        {
             result = or;
+        }
 
         Console.WriteLine(or.Count);
         if (!or.Count.Equals(0))
