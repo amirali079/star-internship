@@ -14,7 +14,7 @@ public class DocumentController : Controller
     }
 
     [HttpGet(ApiRoutes.Documents.Search)]
-    public async Task<IActionResult> GetByKeyword([FromRoute] string query)
+    public async Task<IActionResult> GetByKeyword([FromQuery] string query)
     {
         var docs = await _service.GetDocumentByKeyword(query);
 

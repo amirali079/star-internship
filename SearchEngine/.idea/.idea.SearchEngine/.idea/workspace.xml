@@ -7,7 +7,11 @@
     <projectFile profileName="https">SearchEngine/SearchEngine.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="23b09835-16a8-4e17-87bd-f1f0bc45933a" name="Changes" comment="add asp web api for search engine." />
+    <list default="true" id="23b09835-16a8-4e17-87bd-f1f0bc45933a" name="Changes" comment="add asp web api for search engine.">
+      <change beforePath="$PROJECT_DIR$/SearchEngineWebApp/Contract/V1/ApiRoutes.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SearchEngineWebApp/Contract/V1/ApiRoutes.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SearchEngineWebApp/Controllers/V1/DocumentController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SearchEngineWebApp/Controllers/V1/DocumentController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SearchEngineWebApp/Service/DocumentService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SearchEngineWebApp/Service/DocumentService.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,10 +19,6 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/../DatabaesPhases/EFTest/Program.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/aligo/Desktop/si/star-internship/SampleLibrary/SampleLibrary.Test/QueryManagerTest.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/aligo/Desktop/si/star-internship/SampleLibrary/SampleLibrary/IQueryManager.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/aligo/Desktop/si/star-internship/SampleLibrary/SampleLibrary/QueryManager.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/aligo/Desktop/si/star-internship/SampleLibrary/SearchApp/Program.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/SearchEngineWebApp/Contract/V1/ApiRoutes.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/SearchEngineWebApp/Contract/V1/Response/DocumentResponse.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/SearchEngineWebApp/Controllers/V1/DocumentController.cs" root0="FORCE_HIGHLIGHTING" />
@@ -160,6 +160,7 @@
       <workItem from="1668601072313" duration="451000" />
       <workItem from="1669193012838" duration="681000" />
       <workItem from="1669879050839" duration="14195000" />
+      <workItem from="1669897930115" duration="431000" />
     </task>
     <task id="LOCAL-00001" summary="fix test file">
       <created>1667733250003</created>

@@ -8,6 +8,6 @@ public static class ApiRoutes
 
     public static class Documents
     {
-        public const string Search = Base + "/search/{query}";
+        public const string Search = Base + "/search";
     }
 }
