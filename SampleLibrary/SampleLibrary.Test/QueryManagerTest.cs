@@ -25,11 +25,8 @@ public class QueryManagerTest
     public void Search_token(string input,string expectedToken)
     {
         var expected = new HashSet<string> (expectedToken.Split(" "));
-        var queryManager = new QueryManager
-        {
-            InvertedIndex = _invertedIndex
-        };
-
+        var queryManager = new QueryManager();
+        queryManager.SetInvertedIndex(_invertedIndex);
         var actual = queryManager.Search(input);
         
         Assert.Equal(expected,actual);
