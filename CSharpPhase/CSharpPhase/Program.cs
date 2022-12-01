@@ -1,6 +1,6 @@
 ﻿using System.Text.Json;
 
-namespace ConsoleApp1
+namespace CSharpPhase
 {
     class Program
     {
