@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleLibrary", "SampleLibr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleLibrary.Test", "SampleLibrary.Test\SampleLibrary.Test.csproj", "{EF26D3A2-B76B-431F-8F7E-EF47988477E4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SearchEngineWebApp", "SearchEngineWebApp\SearchEngineWebApp.csproj", "{6AA6D646-C785-45B9-A611-6C425789FF47}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{EF26D3A2-B76B-431F-8F7E-EF47988477E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EF26D3A2-B76B-431F-8F7E-EF47988477E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EF26D3A2-B76B-431F-8F7E-EF47988477E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6AA6D646-C785-45B9-A611-6C425789FF47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6AA6D646-C785-45B9-A611-6C425789FF47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6AA6D646-C785-45B9-A611-6C425789FF47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AA6D646-C785-45B9-A611-6C425789FF47}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
