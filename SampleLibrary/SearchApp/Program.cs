@@ -6,8 +6,9 @@ class Program
     {
         var fileReader = new FileReader();
         var indexer = new Indexer();
-        var queryManager = new QueryManager(){InvertedIndex=indexer.
-            GetInvertedIndex(fileReader.ReadFile(@"../../../../EnglishData"))};
+        var queryManager = new QueryManager();
+        
+        queryManager.SetInvertedIndex(indexer.GetInvertedIndex(fileReader.ReadFile(@"../../../../EnglishData")));
 
         var result = queryManager.Search(Console.ReadLine()?.ToUpper());
 

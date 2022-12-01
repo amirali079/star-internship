@@ -2,11 +2,16 @@
 
 public class QueryManager : IQueryManager
 {
-    public Dictionary<string, HashSet<string>> InvertedIndex;
+    private Dictionary<string, HashSet<string>> _invertedIndex;
+
+    public void SetInvertedIndex(Dictionary<string, HashSet<string>> invertedIndex)
+    {
+        _invertedIndex = invertedIndex;
+    }
 
     public HashSet<string> Search(string? query)
     {
-        var commands = query.Split(" ");
+        var commands = query.ToUpper().Split(" ");
 
         var result = new HashSet<string>();
 
@@ -18,7 +23,7 @@ public class QueryManager : IQueryManager
         {
             if (word[0].Equals('+'))
             {
-                InvertedIndex.TryGetValue(word[1..], out var keys);
+                _invertedIndex.TryGetValue(word[1..], out var keys);
 
                 if (keys != null)
                     foreach (var element in keys)
@@ -28,7 +33,7 @@ public class QueryManager : IQueryManager
             }
             else if (word[0].Equals('-'))
             {
-                InvertedIndex.TryGetValue(word[1..], out var keys);
+                _invertedIndex.TryGetValue(word[1..], out var keys);
                 if (keys != null)
                     foreach (var element in keys)
                     {
@@ -37,7 +42,7 @@ public class QueryManager : IQueryManager
             }
             else
             {
-                InvertedIndex.TryGetValue(word, out var keys);
+                _invertedIndex.TryGetValue(word, out var keys);
                 if (keys != null) and.Add(keys);
             }
         }
@@ -54,11 +59,10 @@ public class QueryManager : IQueryManager
         Console.WriteLine(or.Count);
         if (!or.Count.Equals(0))
             result.IntersectWith(or);
-        
-        
+
 
         foreach (var wordNot in not)
-            result.RemoveWhere(word=>word.Equals(wordNot));
+            result.RemoveWhere(word => word.Equals(wordNot));
 
         return result;
     }
